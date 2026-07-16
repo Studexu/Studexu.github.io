@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tessaris</title>
+<meta name="description" content="Tessaris — a grid strategy game. Draw. Capture. Dominate.">
+<style>
+  :root{
+    --ink:#0B0D14; --panel:#12151F; --line:#232838;
+    --b1:#378ADD; --b2:#185FA5; --b3:#0C447C;
+    --paper:#F5F3EC; --muted:#98A2B6;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--ink); color:var(--paper);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  .wrap{width:100%; max-width:720px; margin:0 auto; padding:0 24px}
+  .top{padding:18px 0}
+  .lang{display:flex; justify-content:flex-end; gap:8px; font-size:13px; font-weight:600}
+  .lang a{color:var(--muted); text-decoration:none}
+  .lang a.on{color:var(--paper)}
+  .lang a:hover{color:var(--paper)}
+  header{flex:1; display:flex; align-items:center; justify-content:center; padding:40px 0 64px}
+  .hero{text-align:center}
+  .logo{width:112px; height:112px; margin:0 auto 28px; display:block; border-radius:26px}
+  h1{font-size:clamp(38px,9vw,64px); margin:0; font-weight:800; letter-spacing:-0.03em; color:var(--paper)}
+  .tag{margin:14px 0 0; font-size:14px; letter-spacing:0.28em; text-transform:uppercase; color:var(--b1); font-weight:600}
+  .lead{margin:26px auto 0; max-width:460px; color:var(--muted); font-size:16px}
+  .links{margin:38px 0 0; display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+  .btn{display:inline-block; padding:12px 20px; border-radius:12px; text-decoration:none; font-size:14px; font-weight:600; border:1px solid var(--line); color:var(--paper); background:var(--panel); transition:border-color .15s ease, transform .15s ease}
+  .btn:hover{border-color:var(--b2); transform:translateY(-1px)}
+  .btn.primary{background:var(--b3); border-color:var(--b3)}
+  .btn.primary:hover{background:var(--b2); border-color:var(--b2)}
+  footer{border-top:1px solid var(--line); padding:22px 0}
+  .foot{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; color:var(--muted); font-size:13px}
+  .foot a{color:var(--muted); text-decoration:none}
+  .foot a:hover{color:var(--paper)}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+  <div class="top"><div class="wrap"><nav class="lang"><a href="index.html" class="on">EN</a><span>·</span><a href="index-fr.html">FR</a></nav></div></div>
+  <header>
+    <div class="wrap hero">
+      <svg class="logo" viewBox="0 0 112 112" role="img" aria-label="Tessaris logo">
+        <rect width="112" height="112" rx="26" fill="#EAF0F5"/>
+        <rect x="26" y="40" width="10" height="10" rx="2.5" fill="#378ADD"/>
+        <rect x="39" y="40" width="10" height="10" rx="2.5" fill="#185FA5"/>
+        <rect x="52" y="40" width="10" height="10" rx="2.5" fill="#0C447C"/>
+        <rect x="65" y="40" width="10" height="10" rx="2.5" fill="#185FA5"/>
+        <rect x="78" y="40" width="10" height="10" rx="2.5" fill="#378ADD"/>
+        <rect x="52" y="53" width="10" height="10" rx="2.5" fill="#185FA5"/>
+        <rect x="52" y="66" width="10" height="10" rx="2.5" fill="#0C447C"/>
+        <rect x="52" y="79" width="10" height="10" rx="2.5" fill="#378ADD"/>
+        <rect x="52" y="92" width="10" height="10" rx="2.5" fill="#0C447C"/>
+      </svg>
+      <h1>Tessaris</h1>
+      <p class="tag">Draw. Capture. Dominate.</p>
+      <p class="lead">A grid strategy game: close the boxes, outplay your opponents, climb the campaign. Available on Android.</p>
+      <div class="links">
+        <a class="btn primary" href="privacy.html">Privacy policy</a>
+        <a class="btn" href="mailto:studexu.contact@gmail.com">Contact</a>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="y"></span> Tessaris — Exuna</span>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
