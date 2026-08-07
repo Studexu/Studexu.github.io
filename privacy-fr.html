@@ -4,102 +4,181 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Politique de confidentialité — Tessaris</title>
-<meta name="description" content="Politique de confidentialité de l'application Tessaris.">
 <style>
-  :root{--ink:#0B0D14; --panel:#12151F; --line:#232838; --b1:#378ADD; --paper:#F5F3EC; --muted:#98A2B6}
-  *{box-sizing:border-box}
-  html,body{margin:0}
-  body{background:var(--ink); color:var(--paper); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased}
-  .wrap{width:100%; max-width:720px; margin:0 auto; padding:0 24px}
-  .top{border-bottom:1px solid var(--line); padding:18px 0}
-  .top .wrap{display:flex; justify-content:space-between; align-items:center}
-  .top a.home{color:var(--muted); text-decoration:none; font-size:14px; font-weight:600}
-  .top a.home:hover{color:var(--paper)}
-  .lang{display:flex; gap:8px; font-size:13px; font-weight:600}
-  .lang a{color:var(--muted); text-decoration:none}
-  .lang a.on{color:var(--paper)}
-  .lang a:hover{color:var(--paper)}
-  main{padding:44px 0 64px}
-  h1{font-size:clamp(28px,6vw,40px); margin:0 0 6px; letter-spacing:-0.02em}
-  .updated{color:var(--muted); font-size:14px; margin:0 0 36px}
-  h2{font-size:20px; margin:38px 0 10px; color:#CFE0F5}
-  p,li{color:#D8DEEA; font-size:16px}
-  a{color:var(--b1)}
-  ul{padding-left:20px}
-  li{margin:6px 0}
-  .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:18px 0}
-  .muted{color:var(--muted); font-size:14px}
-  footer{border-top:1px solid var(--line); padding:22px 0; color:var(--muted); font-size:13px}
+    :root{
+      --fond:#0A0E1A; --fond2:#101630; --carte:#141B33;
+      --trait:#1E2947; --texte:#E7ECF5; --doux:#9AA8C4;
+      --bleu:#4A90D9; --cyan:#38BDF8; --rouge:#F87171;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:0 20px 64px;
+      background:linear-gradient(180deg,var(--fond) 0%,var(--fond2) 100%);
+      background-attachment:fixed;
+      color:var(--texte);
+      font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+    .wrap{max-width:760px;margin:0 auto}
+    nav{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:22px 0;font-size:14px;color:var(--doux);
+    }
+    nav a{color:var(--cyan);text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    h1{font-size:30px;line-height:1.2;margin:18px 0 6px;letter-spacing:-.5px}
+    h2{
+      font-size:19px;margin:38px 0 10px;padding-top:20px;
+      border-top:1px solid var(--trait);letter-spacing:-.2px;
+    }
+    .meta{color:var(--doux);font-size:14px;margin:0 0 26px}
+    .encadre{
+      background:var(--carte);border:1px solid var(--trait);
+      border-radius:14px;padding:18px 20px;margin:24px 0;
+    }
+    .encadre.alerte{border-color:rgba(248,113,113,.45)}
+    .encadre h2{border:0;margin:0 0 8px;padding:0;font-size:17px}
+    ul{padding-left:20px}
+    li{margin:6px 0}
+    a{color:var(--cyan)}
+    code{
+      background:rgba(255,255,255,.06);border-radius:5px;
+      padding:1px 6px;font-size:14px;
+    }
+    footer{
+      margin-top:48px;padding-top:20px;border-top:1px solid var(--trait);
+      color:var(--doux);font-size:13px;text-align:center;
+    }
 </style>
 </head>
 <body>
-  <div class="top"><div class="wrap">
-    <a class="home" href="index-fr.html">← Tessaris</a>
-    <nav class="lang"><a href="privacy.html">EN</a><span>·</span><a href="privacy-fr.html" class="on">FR</a></nav>
-  </div></div>
-  <main>
-    <div class="wrap">
-      <h1>Politique de confidentialité</h1>
-      <p class="updated">Application : Tessaris (Android) · Éditeur : Exuna · Dernière mise à jour : 16 juillet 2026</p>
+<div class="wrap">
+<nav>
+  <a href="index-fr.html">&larr; Tessaris</a>
+  <span><a href="privacy.html">EN</a> &middot; FR</span>
+</nav>
+<h1>Politique de confidentialité</h1>
+<p class="meta">Application : <strong>Tessaris</strong> (Android) &middot; Éditeur : Exuna &middot;
+Dernière mise à jour : <strong>7 août 2026</strong></p>
 
-      <p>Cette politique explique quelles données l'application <strong>Tessaris</strong> traite, pourquoi, et comment vous gardez le contrôle. Elle est rédigée pour être claire plutôt qu'exhaustive en jargon.</p>
+<p>Cette politique explique quelles données l'application <strong>Tessaris</strong> traite,
+pourquoi, et comment vous gardez le contrôle.</p>
 
-      <h2>Résumé</h2>
-      <div class="card">
-        <p style="margin:0">Tessaris <strong>n'a pas de compte, pas de serveur, et ne revend aucune donnée</strong>. Vos données de jeu (pseudo, progression, réglages) restent <strong>sur votre appareil</strong>. Les seules données transmises à des tiers le sont via la régie publicitaire <strong>Google AdMob</strong>, et uniquement selon votre consentement.</p>
-      </div>
+<div class="encadre">
+<h2>En bref</h2>
+<p>Tessaris se joue seul, hors ligne, sans compte. Le mode <strong>multijoueur en ligne</strong>
+change cela : pour vous apparier avec un adversaire, l'application crée un compte
+<strong>anonyme</strong> et publie le pseudo que vous choisissez, votre classement et votre
+bilan de parties classées. Rien d'autre. Aucune donnée n'est vendue, et vous pouvez tout
+supprimer depuis le jeu.</p>
+</div>
 
-      <h2>Qui est responsable du traitement</h2>
-      <p>L'application est éditée par un développeur indépendant (Exuna). Pour toute question relative à cette politique ou à vos données, contactez : <a href="mailto:studexu.contact@gmail.com">studexu.contact@gmail.com</a>.</p>
+<h2>1. Qui est responsable</h2>
+<p>Exuna, développeur indépendant, édite et exploite Tessaris.
+Contact : <a href="mailto:studexu.contact@gmail.com">studexu.contact@gmail.com</a></p>
 
-      <h2>Données stockées sur votre appareil</h2>
-      <p>Pour fonctionner, Tessaris enregistre certaines informations <strong>localement, sur votre téléphone uniquement</strong> (via le stockage de l'application). Ces informations ne sont ni transmises à l'éditeur, ni hébergées sur un serveur :</p>
-      <ul>
-        <li>votre pseudonyme choisi dans le jeu ;</li>
-        <li>votre progression : pièces, niveaux, cosmétiques débloqués, titres, réglages ;</li>
-        <li>votre choix de consentement à la publicité.</li>
-      </ul>
-      <p>Désinstaller l'application ou effacer ses données supprime ces informations de votre appareil.</p>
+<h2>2. Ce qui reste sur votre appareil</h2>
+<p>Le mode solo fonctionne entièrement hors ligne. Sont enregistrés localement, et nulle
+part ailleurs : votre progression de campagne et vos étoiles, vos pièces, vos objets
+cosmétiques, vos titres, vos coffres, l'historique de vos parties, ainsi que vos réglages
+(langue, son, vibrations, qualité visuelle) et votre choix en matière de publicité.
+Désinstaller l'application ou effacer ses données efface tout cela.</p>
 
-      <h2>Publicité (Google AdMob)</h2>
-      <p>Tessaris affiche des publicités via <strong>Google AdMob</strong>. À cette fin, le kit AdMob peut traiter des données telles que des identifiants d'appareil (dont l'identifiant publicitaire), des informations techniques sur l'appareil et des données d'interaction avec les publicités, afin de diffuser et mesurer les annonces.</p>
-      <ul>
-        <li>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un <strong>formulaire de consentement</strong> vous est présenté avant toute publicité. Vous pouvez accepter ou refuser la publicité personnalisée.</li>
-        <li>Si vous refusez, l'application continue de fonctionner ; des publicités <strong>non personnalisées</strong> peuvent être affichées.</li>
-        <li>Vous pouvez <strong>revoir votre choix à tout moment</strong> depuis la section « Confidentialité » des paramètres de l'application.</li>
-      </ul>
-      <p>Le traitement réalisé par Google est régi par ses propres règles. Pour en savoir plus : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Règles de confidentialité de Google</a> et <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">comment Google utilise les données</a>.</p>
+<h2>3. Le compte de jeu et le multijoueur en ligne</h2>
+<p>Dès que vous ouvrez le multijoueur, l'application ouvre pour vous un compte
+<strong>anonyme</strong> auprès de Google Firebase Authentication. Ce compte n'est associé à
+aucune adresse e-mail, aucun numéro et aucune identité : c'est un identifiant technique,
+généré au hasard, qui permet au serveur de reconnaître le même joueur d'une partie à
+l'autre.</p>
+<p>Sont alors enregistrés sur les serveurs de Google Cloud Firestore :</p>
+<ul>
+<li>votre <strong>profil public</strong> : le pseudo que vous choisissez, votre apparence de
+jeu, votre classement (Elo, ligue) et votre bilan de parties classées. Ce profil est
+visible par les autres joueurs, c'est sa raison d'être ;</li>
+<li>vos <strong>tickets de recherche d'adversaire</strong>, le temps d'un appariement ;</li>
+<li>les <strong>parties</strong> auxquelles vous participez : les coups joués, les scores, les
+emotes échangées et les pseudos des deux joueurs ;</li>
+<li>les <strong>signalements</strong> que vous émettez, et les éventuelles décisions de
+modération vous concernant.</li>
+</ul>
+<p>Choisissez un pseudo qui ne vous identifie pas si vous ne souhaitez pas être reconnu :
+il est public.</p>
 
-      <h2>Ce que l'éditeur ne fait pas</h2>
-      <ul>
-        <li>Aucun compte, aucune inscription, aucune connexion requise.</li>
-        <li>Aucune collecte de contacts, de localisation précise, de photos, de micro ou de caméra.</li>
-        <li>Aucune revente de données à des tiers.</li>
-      </ul>
+<h2>4. La sauvegarde cloud (Google Play Jeux)</h2>
+<p>Si vous vous connectez à Google Play Jeux, vous pouvez copier votre progression solo sur
+votre compte Google pour la retrouver sur un autre appareil. Cette sauvegarde est stockée
+par Google, sur votre compte, et non par l'éditeur. Elle contient votre progression, vos
+pièces et vos cosmétiques. Vous pouvez la supprimer depuis le jeu, ou à tout moment depuis
+l'application Google Play Jeux, qui liste vos jeux enregistrés.</p>
 
-      <h2>Si vous nous écrivez</h2>
-      <p>Si vous utilisez le bouton « Feedback » pour nous envoyer un message, votre application e-mail s'ouvre et nous recevons alors votre adresse e-mail ainsi que le contenu de votre message. C'est volontaire, et utilisé uniquement pour traiter votre retour.</p>
+<h2>5. Publicité (Google AdMob)</h2>
+<p>L'application affiche des publicités fournies par Google AdMob. À cette occasion, Google
+traite des identifiants de votre appareil et des données techniques afin de sélectionner et
+de mesurer les annonces. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un
+formulaire de consentement vous est présenté et vous pouvez refuser la publicité
+personnalisée ; les annonces restent alors affichées, mais non ciblées. Google agit ici
+selon ses propres règles :
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com</a>.</p>
 
-      <h2>Enfants</h2>
-      <p>Tessaris n'est pas destiné aux enfants de moins de 13 ans et l'éditeur ne collecte pas sciemment de données les concernant. Si vous pensez qu'un enfant nous a transmis des informations, contactez-nous pour leur suppression.</p>
-      <p class="muted">Note pour l'éditeur : à ajuster selon le public cible déclaré sur le Play Store (« Public cible et contenu ») et les réglages AdMob.</p>
+<h2>6. Supprimer votre compte et vos données</h2>
+<div class="encadre alerte">
+<p><strong>Dans le jeu</strong> : Profil &rarr; Zone danger &rarr; « Supprimer mon compte ».
+Cette action efface votre profil en ligne, votre compte anonyme, votre sauvegarde cloud et
+toutes vos données locales. Elle est immédiate et irréversible.</p>
+<p><strong>Sans installer le jeu</strong>, ou si vous n'y avez plus accès : la marche à
+suivre est décrite sur la page <a href="delete-account-fr.html">Supprimer mon compte</a>.</p>
+</div>
+<p>Une seule exception, et elle est volontaire : les <strong>parties déjà jouées</strong> ne
+sont pas supprimées. Une partie appartient autant à votre adversaire qu'à vous, et son
+effacement à la demande d'un seul des deux joueurs priverait l'autre de son propre
+historique.</p>
 
-      <h2>Vos droits</h2>
-      <p>Selon votre pays (notamment dans l'Union européenne, au titre du RGPD), vous disposez de droits d'accès, de rectification et d'effacement. Comme l'éditeur ne détient aucune donnée vous concernant sur un serveur :</p>
-      <ul>
-        <li>vos données de jeu se suppriment en désinstallant l'application ou en effaçant ses données ;</li>
-        <li>la publicité personnalisée se gère via la section « Confidentialité » de l'application, ou via les réglages de votre appareil (réinitialisation de l'identifiant publicitaire) ;</li>
-        <li>pour toute autre demande, écrivez à <a href="mailto:studexu.contact@gmail.com">studexu.contact@gmail.com</a>.</li>
-      </ul>
+<h2>7. Ce que l'éditeur ne fait pas</h2>
+<ul>
+<li>Aucune vente, aucune location, aucun échange commercial de vos données.</li>
+<li>Aucun accès à vos contacts, à votre position, à vos photos, à votre micro ou à votre
+appareil photo. L'application ne demande aucune de ces autorisations.</li>
+<li>Aucun profilage publicitaire construit par l'éditeur : la publicité est entièrement
+gérée par Google.</li>
+<li>Aucun achat intégré.</li>
+</ul>
 
-      <h2>Modifications</h2>
-      <p>Cette politique peut évoluer si l'application change (par exemple, ajout de nouvelles fonctionnalités). La date de dernière mise à jour figure en haut de cette page.</p>
+<h2>8. Si vous nous écrivez</h2>
+<p>Le bouton de retour du jeu ouvre votre application e-mail avec un message pré-rempli.
+Nous recevons alors votre adresse et le contenu de votre message, utilisés uniquement pour
+vous répondre et corriger ce que vous signalez.</p>
 
-      <h2>Contact</h2>
-      <p>Pour toute question : <a href="mailto:studexu.contact@gmail.com">studexu.contact@gmail.com</a>.</p>
-    </div>
-  </main>
-  <footer><div class="wrap">© <span id="y"></span> Tessaris — Exuna</div></footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<h2>9. Enfants</h2>
+<p>Tessaris n'est pas destiné aux enfants de moins de 13 ans et ne leur est pas adressé. Si
+vous êtes le parent ou le tuteur d'un enfant de moins de 13 ans qui aurait créé un profil en
+ligne, écrivez-nous et nous le supprimerons.</p>
+
+<h2>10. Sous-traitants et transferts</h2>
+<p>L'application s'appuie sur des services fournis par Google : Firebase Authentication,
+Cloud Firestore, Google Play Jeux et AdMob. Ces services peuvent traiter des données en
+dehors de l'Union européenne, dans le cadre des garanties contractuelles de Google.
+Aucun autre destinataire n'existe.</p>
+
+<h2>11. Durée de conservation</h2>
+<p>Votre profil en ligne est conservé tant que vous ne le supprimez pas. Les tickets de
+recherche disparaissent en quelques minutes. Les parties jouées sont conservées pour
+l'historique des joueurs qui y ont participé. Les données locales vivent sur votre appareil
+jusqu'à ce que vous les effaciez.</p>
+
+<h2>12. Vos droits</h2>
+<p>Selon la législation applicable, notamment le RGPD dans l'Union européenne, vous disposez
+d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition. Le droit
+d'effacement s'exerce directement dans le jeu ou via la page de suppression ; pour tout le
+reste, écrivez à <a href="mailto:studexu.contact@gmail.com">studexu.contact@gmail.com</a>.
+Vous pouvez également introduire une réclamation auprès de votre autorité de protection des
+données.</p>
+
+<h2>13. Modifications</h2>
+<p>Cette politique peut évoluer avec l'application. La date de dernière mise à jour figure
+en haut de cette page. Les changements importants seront annoncés dans le jeu.</p>
+
+<h2>14. Contact</h2>
+<p><a href="mailto:studexu.contact@gmail.com">studexu.contact@gmail.com</a></p>
+<footer>&copy; Tessaris &mdash; Exuna</footer>
+</div>
 </body>
 </html>
